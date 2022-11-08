@@ -1,8 +1,9 @@
-<html>
+<html lang="en-US">
 
 <head>
   <meta charset=utf-8>
-  <title></title>
+  <title>FizzBuzz</title>
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -10,28 +11,31 @@
   <div id="container">
     <div id="main">
       <div class="intro">
-        <h1>Hi! Welcome to my profile</h1>
-        <p>
-          I'm a software engineer who likes to play guitar and take long walks.
+        <img src="fizzbuzz_gif.gif" alt="FizzBuzz" style="width: 500px ;height: 200px;">
+        <h1>
+          All you need to do is to click on the button!
+        </h1>
+        <p class="rules">
+          <br>Every time you'll hit a number divisible by three <strong>FIZZ</strong> will pop up</br>
+          <br>Every time you'll hit a number divisible by five <strong>BUZZ</strong> will pop up</br>
+          <br>And if it is divisible by both of them <strong>FIZZ BUZZ</strong> will pop up</br>
         </p>
-      </div>
-      <div id="work">
-        <h2>Work</h2>
-        <p>
-          I work at a software company.
+        <p class="wiki">
+          If it is still not clear to you, visit the <a href="https://en.wikipedia.org/wiki/Fizz_buzz"
+            title="Don't waste your time tho, there isn't much to it...">wikipedia</a> page.<br></br>
         </p>
+        <p>Try it yourself!</p>
       </div>
-      <div id="play">
-        <h2>Play</h2>
-        <p>
-          I play guitar and like to go walking.
-        </p>
+      <div id="numbersBar">
+        <input type="number" id="currentNumber" readonly value=0><br></br>
       </div>
-      <div id="cat">
-        <img src="cat.png" alt="Black metal cat" />
-      </div>
-      <div id="contact">
-        <button>Contact me</button>
+      <div>
+        <div id="increment">
+          <button class="buttons" onclick="incrementNumber()">increment</button>
+        </div>
+        <div id="reset">
+          <button class="buttons" onclick="resetNumber()">reset</button>
+        </div>
       </div>
     </div>
   </div>

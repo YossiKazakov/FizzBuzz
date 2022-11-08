@@ -1,31 +1,54 @@
 body {
-  background-color: #f5f5f5;
-  color: #2d2c2c
+  background-color: lightblue;
+  color: white;
+  text-align: center;
 }
 
-#container {
-  width: 100%;
+
+h1 {
+  color: white;
 }
 
-#main {
-  margin: 0 auto;
+.wiki {
+  font-size: x-small;
 }
 
-#cat {
-  padding: 1rem 0 1rem 0;
+p {
+  font-family: verdana;
+  font-size: 20px;
 }
 
-#contact button {
+.buttons {
+  background-color: #52c5e4;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 4px 2px;
   cursor: pointer;
 }
 
-#cat img {
-  transition: 3s;
-  filter: brightness(60%);
+#increment {
+  display: inline;
 }
 
-#cat img:hover {
-  cursor: wait;
-  transition: 0.3s;
-  filter: brightness(100%);
+#reset {
+  display: inline;
+}
+
+#currentNumber {
+  text-align: center;
+  background: transparent;
+  border: none;
+  font-size: xxx-large;
+  width: 2em;
+  color: white;
+}
+.rules {
+  font-size: medium;
 }
