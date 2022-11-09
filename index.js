@@ -26,6 +26,22 @@ function resetNumber() {
   currNum.value = 0
 }
 
+function toggleVisibility() {
+  /**
+   * Toggles the given game's division visibility
+   */
+  var game = document.getElementById("game");
+  var dis_btn = document.getElementById("display_button");
+  if (game.style.visibility == "hidden"){
+    game.style.visibility = "visible";
+    dis_btn.value = "Okay that's enough";
+  }
+  else {
+    game.style.visibility = "hidden";
+    dis_btn.value = "Try it yourself!";
+  }
+}
+
 function incrementNumber() {
   /**
    * When the user clicks on the 'increment' button, this function is called.

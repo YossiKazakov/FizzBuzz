@@ -15,26 +15,28 @@
         <h1>
           All you need to do is to click on the button!
         </h1>
-        <p class="rules">
-          <br>Every time you'll hit a number divisible by three <strong>FIZZ</strong> will pop up</br>
-          <br>Every time you'll hit a number divisible by five <strong>BUZZ</strong> will pop up</br>
-          <br>And if it is divisible by both of them <strong>FIZZ BUZZ</strong> will pop up</br>
-        </p>
+        <ul class="rules">
+          <li>Every time you'll hit a number divisible by three <strong>FIZZ</strong> will pop up</li>
+          <li>Every time you'll hit a number divisible by five <strong>BUZZ</strong> will pop up</li>
+          <li>And if number divisible by both of them <strong>FIZZ BUZZ</strong> will pop up</li>
+        </ul>
         <p class="wiki">
           If it is still not clear to you, visit the <a href="https://en.wikipedia.org/wiki/Fizz_buzz"
             title="Don't waste your time tho, there isn't much to it...">wikipedia</a> page.<br></br>
         </p>
-        <p>Try it yourself!</p>
+        <input type="button" id="display_button" onclick="toggleVisibility()" value="Try it yourself!"></input>
       </div>
-      <div id="numbersBar">
-        <input type="number" id="currentNumber" readonly value=0><br></br>
-      </div>
-      <div>
-        <div id="increment">
-          <button class="buttons" onclick="incrementNumber()">increment</button>
+      <div id="game" style="visibility:hidden">
+        <div id="numbersBar">
+          <input type="number" id="currentNumber" readonly value=0><br></br>
         </div>
-        <div id="reset">
-          <button class="buttons" onclick="resetNumber()">reset</button>
+        <div>
+          <div id="increment">
+            <button class="buttons" onclick="incrementNumber()"><em>increment</em></button>
+          </div>
+          <div id="reset">
+            <button class="buttons" onclick="resetNumber()"><em>reset</em></button>
+          </div>
         </div>
       </div>
     </div>
